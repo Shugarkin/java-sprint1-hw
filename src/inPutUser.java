@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class inPutUser { //для проверки на int
+    int userCommand;
+    Scanner scan = new Scanner(System.in);
+    public int inPut() {
+        if (!scan.hasNextInt()) {
+            while (!scan.hasNextInt()) {
+                System.out.println("Необходимо вводить числовое значение");
+                scan.next();
+            }
+            userCommand = scan.nextInt();
+        } else userCommand = scan.nextInt();
+        return userCommand;
+    }
+}

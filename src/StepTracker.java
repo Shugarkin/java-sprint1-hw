@@ -1,7 +1,7 @@
 public class StepTracker {
-    inPutUser command = new inPutUser();
-    int purposeOfSteps = 10000;
-    MonthData[] monthToData;
+    public inPutUser command = new inPutUser();
+    public int purposeOfSteps = 10000;
+    public MonthData[] monthToData;
 
     public StepTracker() {
         monthToData = new MonthData[12];
@@ -10,7 +10,7 @@ public class StepTracker {
         }
     }
 
-    void newPurposeOfSteps() { //новая цель для шагов
+    public void newPurposeOfSteps() { //новая цель для шагов
         int newPurposeOfSteps = 0;
         System.out.println("Введите новую цель по количеству шагов в день:");
         newPurposeOfSteps = command.inPut();
@@ -41,7 +41,7 @@ public class StepTracker {
     }
 
 
-    void statictic() { //статистика
+    public void statictic() { //статистика
         double allDis = 0;
         double allKKal = 0;
         int month = 0;

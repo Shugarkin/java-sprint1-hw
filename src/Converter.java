@@ -1,6 +1,6 @@
 public class Converter {
-    double kkal = 0;
-    double dist = 0;
+    public double kkal = 0;
+    public double dist = 0;
 
     public double convertDist(int saveDayStep) {
 

@@ -1,6 +1,6 @@
 class MonthData {
-    inPutUser command = new inPutUser();
-    int[] monthDays = new int[30]; // массив для дней в месяце
+    public inPutUser command = new inPutUser();
+    public int[] monthDays = new int[30]; // массив для дней в месяце
     public int allStepsMonth() { // метод для общего кол шагов в месяце
         int allStM = 0;
         for (int i = 0; i < monthDays.length; i++) {
